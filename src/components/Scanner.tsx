@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import jsQR, { QRCode } from "jsqr";
+import jsQR from "jsqr";
 
 function Scanner() {
     const videoRef = useRef<HTMLVideoElement>(null);
