@@ -23,6 +23,7 @@ function Scanner() {
                 const code = jsQR(imageData.data, imageData.width, imageData.height);
                 if (code) {
                     console.log("QR code detected: ", code.data);
+                    window.location.href = code.data;
                 }
             } catch (error) {
                 console.error(error);
